@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aquis | Portfolio</title>
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#home" class="logo">Aquis.</a>
+  <i class="bx bx-menu" id="menu-icon"></i>
+  <nav class="navbar">
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a href="#contact" class="btn header-btn">Contact Me</a>
+</header>
+
+<!-- HOME -->
+<section class="home" id="home">
+  <div class="home-content">
+    <h1>Hi, It's <span>Mervin</span></h1>
+    <h3>I'm a <span>Web Developer</span></h3>
+    <p>I build responsive, modern, and user-friendly web applications using HTML, CSS, and JavaScript. Let's create something amazing together.</p>
+  <div class="social-icons">
+    <a href="#"><i class="bx bxl-github"></i></a>
+    <a href="#"><i class="bx bxl-linkedin"></i></a>
+    <a href="https://www.instagram.com/rem_aki.05?xtok=MXEzeTV1cjQ1cjBxNQ=="><i class="bx bxl-instagram"></i></a>
+    <a href="https://www.facebook.com/aquis.mervin"><i class="bx bxl-facebook"></i></a>
+  </div>
+    <div class="button-group">
+      <a href="#contact" class="btn">Hire</a>
+      <a href="#contact" class="btn btn-outline">Contact</a>
+    </div>
+  </div>
+  <div class="home-image"><img src="maipic.jpeg" alt="Kris"></div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="about-image"><img src="maipic.jpeg" alt="About Mervin"></div>
+
+  <div class="about-text">
+    <h2>About <span>Me</span></h2>
+    <p>I am a passionate web developer with a strong focus on building clean, functional, and visually appealing user interfaces. As a dedicated Information Technology student
+      with a background in Accountancy, Business and Management, I combine design and business understanding to create websites that are practical
+      and user-friendly. I continuously explore new technologies and improve my skills to build better projects with every experience.
+    </p>
+  </div>
+
+  <div class="about-btn">
+    <button type="button" class="btn" id="read-btn" aria-expanded="false" aria-controls="education" onclick="toggleEducation()">Read More</button>
+  </div>
+
+  <div class="education-wrap" id="education">
+      <div class="education-inner">
+        <h2 class="edu-heading">My <span>Education</span></h2>
+        <p class="edu-sub">My academic foundation &amp; ongoing journey</p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <span class="timeline-year">2026 - Present</span>
+            <div class="timeline-card current">
+              <h3>Bachelor of Science in Information Technology</h3>
+              <h5>Computer Communication Development Institute (CCDI)</h5>
+              <p> Currently taking Bachelor of Science in Information Technology, where I am building my foundation in web development, database
+                management, and programming. I am learning how to turn ideas into working systems, from simple websites to functional projects with real features.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-dot small"></span>
+            <span class="timeline-year">2022 - 2023</span>
+            <div class="timeline-card">
+              <h3>Accountancy Business Management (ABM)</h3>
+              <h5>Lagro National High School</h5>
+              <p> Graduated Senior High School under ABM strand, where I gained knowledge in business and management, accounting, and entrepreneurship.
+                It taught me how to think like a business owner, not just a programmer, which helps me create systems that are actually useful.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <h2 class="heading">Our <span>Services</span></h2>
+  <div class="services-container">
+    <div class="service-box"><div class="service-info">
+      <i class="bx bxl-figma"></i><h4>UI/UX Design</h4>
+      <p>Creating intuitive layouts and wireframes focused on enhancing user satisfaction and engagement.</p>
+    </div></div>
+    <div class="service-box"><div class="service-info">
+      <i class="bx bx-code-alt"></i><h4>Frontend Development</h4>
+      <p>Building responsive and interactive websites utilizing modern HTML5, CSS3, and JavaScript.</p>
+    </div></div>
+    <div class="service-box"><div class="service-info">
+      <i class="bx bx-bar-chart-alt"></i><h4>Digital Marketing</h4>
+      <p>Optimizing web presence to maximize visibility, performance, and audience reach.</p>
+    </div></div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+  <h2 class="heading">Latest <span>Projects</span></h2>
+  <div class="projects-box">
+    <div class="project-card">
+      <img src="calcu1.png" alt="Pixel Calcu">
+      <h3>Calculator</h3>
+      <p>A simple, fully responsive calculator.</p>
+      <a href="https://pixelcalcu-e5l9h5epm-mervin7.vercel.app/" class="btn">Review Project</a>
+    </div>
+    <div class="project-card">
+      <img src="project2.png" alt="Portfolio Dashboard">
+      <h3>Portfolio Dashboard</h3>
+      <p>An administrative tracking interface featuring custom data views and clean CSS grids.</p>
+      <a href="#" class="btn">Review Project</a>
+    </div>
+    <div class="project-card">
+      <img src="project3.png" alt="Task Manager">
+      <h3>Task Manager</h3>
+      <p>A productivity application designed to organize daily tasks and streamline workflows.</p>
+      <a href="#" class="btn">Review Project</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <h2 class="heading">Contact <span>Me</span></h2>
+  <p class="sub-heading">Have a project or opportunity in mind? Let's talk.</p>
+
+  <div class="contact-wrapper">
+    <div class="info-card"><i class="bx bxs-envelope"></i>
+      <div><h4>Email</h4><p>mackyaquis143@gmail.com</p></div></div>
+    <div class="info-card"><i class="bx bxs-phone"></i>
+      <div><h4>Phone</h4><p>09066529807</p></div></div>
+    <div class="info-card"><i class="bx bxs-map"></i>
+      <div><h4>Location</h4><p>Sorsogon, Philippines</p></div></div>
+
+    <form action="#" class="contact-form">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="text" placeholder="Subject">
+      <textarea rows="7" placeholder="Your Message" required></textarea>
+      <input type="submit" value="Send Message" class="btn">
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="social-icons">
+    <a href="#"><i class="bx bxl-github"></i></a>
+    <a href="#"><i class="bx bxl-linkedin"></i></a>
+    <a href="#"><i class="bx bxl-instagram"></i></a>
+    <a href="#"><i class="bx bxl-facebook"></i></a>
+</div>
+  <ul class="list">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <p class="copyright">© 2026 Aquis | All Rights Reserved</p>
+</footer>
+
+<script>
+function toggleEducation() {
+  var edu = document.getElementById('education');
+  var about = document.getElementById('about');
+  var btn = document.getElementById('read-btn');
+  var isOpen = edu.classList.toggle('open');
+  about.classList.toggle('expanded', isOpen);
+  btn.textContent = isOpen ? 'Read Less' : 'Read More';
+  btn.setAttribute('aria-expanded', isOpen);
+}
+</script>
+<script>
+// Highlights the nav link of the section you are currently in (no hover needed)
+(function () {
+  var sections = document.querySelectorAll('section[id]');
+  var links = document.querySelectorAll('.navbar a');
+  var header = document.querySelector('.header');
+
+  function update() {
+    var line = (header ? header.offsetHeight : 0) + window.innerHeight * 0.25;
+    var current = sections[0].id;
+    for (var i = 0; i < sections.length; i++) {
+      if (sections[i].getBoundingClientRect().top <= line) current = sections[i].id;
+    }
+    // bottom of the page -> last section (Contact)
+    if (window.innerHeight + Math.round(window.pageYOffset) >= document.documentElement.scrollHeight - 5) {
+      current = sections[sections.length - 1].id;
+    }
+    for (var j = 0; j < links.length; j++) {
+      links[j].classList.toggle('active', links[j].getAttribute('href') === '#' + current);
+    }
+  }
+
+  window.addEventListener('scroll', update, true);
+  window.addEventListener('resize', update);
+  window.addEventListener('load', update);
+  update();
+})();
+</script>
+<script src="main.js"></script>
+</body>
+</html>
