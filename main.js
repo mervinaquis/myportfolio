@@ -1,4 +1,3 @@
-// Burger menu (opens/closes with animation; the CSS handles the look)
 const menuIcon = document.querySelector('#menu-icon');
 const navbar = document.querySelector('.navbar');
 
@@ -42,6 +41,9 @@ document.addEventListener('keydown', (e) => {
     menuIcon.focus();
   }
 });
+
 window.addEventListener('resize', () => {
-  if (window.innerWidth > 991 && isMenuOpen()) setMenu(false);
+  if (window.innerWidth > 991 && isMenuOpen()) {
+    setMenu(false);
+  }
 });
